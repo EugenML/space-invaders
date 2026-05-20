@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+}
+
+#container {
+  position: relative;
+}
+
+#gameCanvas {
+  display: block;
+  border: 2px solid #33ff33;
+  box-shadow: 0 0 20px #33ff33, 0 0 40px #33ff3344;
+}
+
+#overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#overlay.hidden {
+  display: none;
+}
+
+#overlayTitle {
+  color: #33ff33;
+  font-size: 52px;
+  letter-spacing: 8px;
+  text-shadow: 0 0 15px #33ff33;
+  text-align: center;
+}
+
+#overlayScore {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+#overlayBtn {
+  margin-top: 20px;
+  padding: 14px 40px;
+  background: transparent;
+  color: #33ff33;
+  border: 2px solid #33ff33;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  text-shadow: 0 0 8px #33ff33;
+  box-shadow: 0 0 10px #33ff33;
+  transition: all 0.2s;
+}
+
+#overlayBtn:hover {
+  background: #33ff33;
+  color: #000;
+}
