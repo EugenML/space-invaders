@@ -523,10 +523,12 @@ function showOverlay(title, msg) {
 
 function loseGame() {
   showOverlay('GAME OVER', `SCORE: ${state.score}  HI: ${state.hiScore}`);
+  if (typeof window.saveScore === 'function') window.saveScore(state.score, state.level);
 }
 
 function winGame() {
   showOverlay('YOU WIN!', `SCORE: ${state.score}  HI: ${state.hiScore}`);
+  if (typeof window.saveScore === 'function') window.saveScore(state.score, state.level);
 }
 
 // --- Input ---

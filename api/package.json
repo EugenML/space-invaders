@@ -1,0 +1,10 @@
+{
+  "name": "space-invaders-api",
+  "version": "1.0.0",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mssql": "^11.0.1",
+    "xlsx": "^0.18.5"
+  }
+}
